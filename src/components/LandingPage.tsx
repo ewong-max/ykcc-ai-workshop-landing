@@ -6,12 +6,7 @@ import {
   WORKSHOP_DAYS
 } from '../data/workshopData';
 import { InterestRegistration } from '../types';
-import {
-  SHEET_URL,
-  isSubmissionConfigured,
-  buildLead,
-  submitLeadToSheet
-} from '../lib/leadSubmission';
+import { isSubmissionConfigured, buildLead, submitLeadToSheet } from '../lib/leadSubmission';
 import {
   Calendar,
   Clock,
@@ -813,19 +808,6 @@ export const LandingPage: React.FC = () => {
                 </form>
               )}
           </div>
-
-          <p className="mt-5 text-center text-[11px] text-[#8A8983]">
-            {ORGANIZER_INFO.brandName} staff:{' '}
-            <a
-              href={SHEET_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-[#0284C7] hover:underline"
-            >
-              open the registrations sheet
-            </a>
-            .
-          </p>
         </div>
       </section>
 
