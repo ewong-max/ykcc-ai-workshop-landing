@@ -45,6 +45,30 @@ which has been blanked rather than replaced with guesses. Fill in `email`, `phon
 `website` and `address` and they appear automatically in the footer; blank entries are
 skipped.
 
+## The live site
+
+<https://ewong-max.github.io/ykcc-ai-workshop-landing/>
+
+Hosted free on GitHub Pages from the `gh-pages` branch of this repository. `main` holds the
+source; `gh-pages` holds the built files and is generated, never edited by hand.
+
+### Publishing an update
+
+After changing anything — contact details, workshop dates once confirmed, copy — run:
+
+```bash
+npm run deploy
+```
+
+That rebuilds the site and pushes it to `gh-pages`. The live URL refreshes within a minute
+or two. Commit and push your source changes to `main` separately so the two stay in step.
+
+### Using your own domain
+
+To serve this at something like `workshop.ykgroup.com.my` instead, add the domain under
+**Settings → Pages → Custom domain** in the GitHub repo, then add the DNS record GitHub
+shows you at your domain registrar.
+
 ## Where registrations go
 
 `Registrations` tab of
