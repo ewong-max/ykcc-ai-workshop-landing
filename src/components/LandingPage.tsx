@@ -103,13 +103,13 @@ export const LandingPage: React.FC = () => {
     },
     {
       code: "Drill 2B",
-      title: "Horizontal Payroll Unpivoting & Folder Sweeps",
-      category: "Folder Batching & Audit Prep",
+      title: "Payroll Excel into Form E (CP8D) Format",
+      category: "Form E & Payroll Compliance",
       duration: "45 Mins",
       image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80",
-      description: "Transform wide, unpivot horizontal payroll spreadsheets into clean vertical database tables ready for audit sampling and pivot table reporting.",
-      keyOutcome: "Standardizes legacy client payroll files instantly.",
-      samplePrompt: `"Unpivot this multi-department payroll sheet into vertical database records with columns: Employee ID, Name, Department, Pay Component, Amount, Month."`
+      description: "Turn the raw monthly payroll reports your system spits out into the layout CP8D actually needs — one row per employee, with the full year's remuneration, EPF, PCB and benefits already totalled.",
+      keyOutcome: "Form E preparation drops from days of copy-paste to minutes.",
+      samplePrompt: `"Here are 12 monthly payroll reports for one client. Combine them into a single CP8D table with one row per employee: name, income tax number, IC number, EPF number, total gross remuneration, benefits in kind, employee EPF contribution, zakat and total PCB deducted for the year. Show me the headcount and the total PCB so I can agree it to the payroll summary, and flag any employee who is missing a month."`
     },
     {
       code: "Drill 3A",
@@ -239,7 +239,7 @@ export const LandingPage: React.FC = () => {
                 <ul className="space-y-2 text-xs text-[#D0CFCA]">
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-1.5 flex-shrink-0" />
-                    <span><strong>10+ Ready-to-Use Accounting Prompts</strong> for bank statement extraction, payroll unpivoting & SME tax calculations.</span>
+                    <span><strong>10+ Ready-to-Use Accounting Prompts</strong> for bank statement extraction, Form E (CP8D) payroll preparation & SME tax calculations.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-1.5 flex-shrink-0" />
@@ -830,7 +830,7 @@ export const LandingPage: React.FC = () => {
             {[
               {
                 title: "Audit Seniors & Managers",
-                desc: "Automate trial balance variance sweeps, unpivot payroll registers, and generate audit sampling working papers in seconds.",
+                desc: "Automate trial balance variance sweeps, get payroll registers into Form E (CP8D) shape, and generate audit sampling working papers in seconds.",
                 icon: FileSpreadsheet
               },
               {

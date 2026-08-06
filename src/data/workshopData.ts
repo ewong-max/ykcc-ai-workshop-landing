@@ -208,7 +208,7 @@ export const WORKSHOP_DAYS: DaySchedule[] = [
         endTime: "12:45",
         title: "Module 2: Cowork — Multi-File Folder Workflows",
         chapterSource: "Chapter 4 (Part 1)",
-        objective: "Supervise Claude Desktop working on entire directories: file inventory, batch 12-statement extraction, and complex payroll unpivoting.",
+        objective: "Supervise Claude Desktop working on entire directories: file inventory, batch 12-statement extraction, and reshaping raw payroll reports into Form E (CP8D) ready data.",
         pacingTip: "Focus on the 'Propose before acting' mandate. Ensure participants see how Cowork detects missing files (September statement).",
         exercises: [
           {
@@ -244,9 +244,9 @@ export const WORKSHOP_DAYS: DaySchedule[] = [
             id: "ex-2c",
             chapter: 4,
             code: "Ex 2C",
-            title: "Payroll Data Unpivoting",
+            title: "Payroll Excel into Form E (CP8D) Format",
             durationMinutes: 40,
-            description: "Transform nested horizontal vendor payroll listing into a flat 48-row tabular CSV suitable for data analytics.",
+            description: "Reshape a raw payroll listing, where each employee's pay components run across the months, into a clean one-row-per-employee-per-month table — the structured base the CP8D annual figures are built from.",
             promptText: "Convert the file Client-Files/03_Payroll/DummyTrading_Payroll_Listing_2025.csv from its current nested horizontal format into a flat tabular report. Source structure: a header row of months (JAN to DEC); each employee starts with a row “Name: [Full Name]” then “I/C: [Number]”; component rows below (Salary Basic, Allowance, Overtime, EPF, Socso, PCB, etc.) with values spread across the month columns. Transformation: unpivot the 12 month columns into a single Month column; generate exactly 12 rows per employee repeating Name and I/C; turn pay components into columns in this exact order: Name, I/C, Month, Salary Basic, Allowance Transport, Allowance Proforma, Commission, Overtime, Angpau/Bonus, Income tax beared by employer, Deduction (Late), Others, Exempted allowance (petrol), EPF (employee), Socso (employee), EIS (employee), PCB, CP38, Zakat, EPF (employer), Socso (employer), EIS (employer). Formatting: clean I/C numbers to digits only, round all values to 2 decimal places, fill blanks with 0.00. Output as a downloadable CSV saved to the Outputs folder.",
             promptExplanation: "Performs complex wide-to-long matrix transformation preserving 22 strict column definitions.",
             verificationSteps: [
@@ -722,7 +722,7 @@ export const COURSE_HIGHLIGHTS: CourseHighlight[] = [
   {
     title: "Automate Repetitive Admin & Tax Work",
     subtitle: "Reclaim 10+ Hours Every Week",
-    description: "Convert messy PDF bank statements to structured Excel, unpivot horizontal payroll files, and execute SME tax calculations in seconds.",
+    description: "Convert messy PDF bank statements to structured Excel, reshape raw payroll reports into Form E (CP8D) ready tables, and execute SME tax calculations in seconds.",
     metric: "80%",
     metricLabel: "Time Saved on Data Entry"
   },
@@ -765,7 +765,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     id: "faq-4",
     category: "Curriculum",
     question: "What topics are covered across the 2-day workshop?",
-    answer: "Day 1 focuses on practical AI prompt engineering, PDF bank statement extraction, payroll unpivoting, SME tax rules, and Google Connectors. Day 2 is a hands-on sprint focusing on building and deploying live custom AI web applications, version control audit trails, and client lead capture."
+    answer: "Day 1 focuses on practical AI prompt engineering, PDF bank statement extraction, preparing payroll data for Form E (CP8D), SME tax rules, and Google Connectors. Day 2 is a hands-on sprint focusing on building and deploying live custom AI web applications, version control audit trails, and client lead capture."
   },
   {
     id: "faq-5",
