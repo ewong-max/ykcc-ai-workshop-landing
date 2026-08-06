@@ -19,9 +19,13 @@ export const Header: React.FC = () => {
         <div className="h-16 flex items-center justify-between gap-4">
           {/* Brand */}
           <a href="#top" className="flex items-center gap-3 min-w-0 group">
-            <span className="w-9 h-9 rounded-xl bg-[#0284C7] text-white flex items-center justify-center text-sm font-black tracking-tight flex-shrink-0 shadow-sm">
-              YK
-            </span>
+            <img
+              src="./yk-logo.png"
+              alt="YK Group"
+              width={402}
+              height={216}
+              className="h-9 w-auto flex-shrink-0"
+            />
             <span className="min-w-0">
               <span className="block text-sm font-extrabold text-[#111113] leading-tight truncate group-hover:text-[#0284C7] transition-colors">
                 AI Workshop for Accountants

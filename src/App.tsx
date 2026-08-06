@@ -43,9 +43,11 @@ export default function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Brand */}
             <div className="lg:col-span-2 space-y-3">
-              <div className="flex items-center gap-2.5">
-                <span className="w-8 h-8 rounded-lg bg-[#0284C7] text-white flex items-center justify-center text-xs font-black">
-                  YK
+              <div className="flex items-center gap-3">
+                {/* White chip: the logo's letterforms are knocked out, so it needs a light
+                    backing to stay legible on the dark footer. */}
+                <span className="inline-flex items-center justify-center bg-white rounded-lg px-2.5 py-1.5">
+                  <img src="./yk-logo.png" alt="YK Group" className="h-5 w-auto" />
                 </span>
                 <span className="font-bold text-slate-100 text-sm">{ORGANIZER_INFO.brandName}</span>
               </div>
